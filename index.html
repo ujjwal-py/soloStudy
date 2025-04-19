@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Solo Study</title>
+    </head>
+<body>
+    <div class="main">
+        <h1>Solo Study <img src="images\computer.png"></h1>
+        <p> This Website is Designed to help you give a soothing <b>Study</b> environment that motivates you and helps you track your progress.</p>
+    </div>
+    <div class="tools">
+        <div class="todolist">
+            <h2>To-Do List<img src="images\todo-icon.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task here">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id = "list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+        <div class="pomodoro">
+            <h2>POMODORO TIMER <img src = "images\clock.png"></h2>
+            <div id="timer">25:00</div>
+            <div class="pomoButtons">
+                <button onclick="start()">Start</button>
+                <button onclick="stop()">Stop</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="bgmusic">
+        <h2 id="bghead">Background Music</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HQwLPhE2zys?si=F82GCzzjboFy9eDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
