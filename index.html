@@ -20,7 +20,7 @@
             <h2>To-Do List<img src="images\todo-icon.png"></h2>
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add your task here">
-                <button onclick="addTask()">Add</button>
+                <button id = "todoButton"onclick="addTask()">Add</button>
             </div>
             <ul id = "list-container">
                 <!-- <li class="checked">Task 1</li>
@@ -29,13 +29,19 @@
             </ul>
         </div>
         <div class="pomodoro">
-            <h2>POMODORO TIMER <img src = "images\clock.png"></h2>
-            <div id="timer">25:00</div>
-            <div class="pomoButtons">
-                <button onclick="start()">Start</button>
-                <button onclick="stop()">Stop</button>
-                <button onclick="reset()">Reset</button>
+            <h2 id="timerId">POMODORO TIMER <img src = "images\clock.png"></h2>
+            <div class="buttons-container">
+                <button onclick="setWork()" class="setButtons">Work</button>
+                <button onclick="setBreak()" class="setButtons">Break</button>
+                <button onclick="setLongbreak()" class="setButtons">Long Break</button>
             </div>
+            <div id="timer">25:00</div>
+            <div class="buttons-container">
+                <button onclick="start()" class="pomoButtons">Start</button>
+                <button onclick="pause()"class="pomoButtons">Pause</button>
+
+            </div>
+            <!-- <div id="work-type">Work</div> -->
         </div>
     </div>
     <div class="bgmusic">

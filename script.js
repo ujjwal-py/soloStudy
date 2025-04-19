@@ -44,15 +44,19 @@ function showData() {
 showData();
 
 
-// <!-- Add this in your existing <script src="script.js"></script> file or at the bottom of your HTML file before </body> -->
-
+// let timerHeding = document.getElementById("timerId");
 let timerDisplay = document.getElementById("timer");
 let startButton = document.querySelector(".pomoButtons button:nth-child(1)");
 let stopButton = document.querySelector(".pomoButtons button:nth-child(2)");
-let resetButton = document.querySelector(".pomoButtons button:nth-child(3)");
+// let resetButton = document.querySelector(".pomoButtons button:nth-child(3)");
+
+const workTime = 25 * 60;
+const breakTime = 5 * 60;
+const longbreakTime = 15 * 60;
+
 
 let countdown;
-let timeLeft = 25 * 60; // default 25 minutes
+let timeLeft = workTime; // default 25 minutes
 let isRunning = false;
 
 function updateDisplay() {
@@ -75,14 +79,26 @@ function start() {
     }, 1000);
 }
 
-function stop() {
+function pause() {
     isRunning = false;
     clearInterval(countdown);
 }
 
-function reset() {
-    stop();
-    timeLeft = 25 * 60;
+function setWork() {
+    timeLeft = workTime;
+    isRunning = false;
+    // timerHeding.textContent = "WORK";
     updateDisplay();
 }
+function setBreak() {
+    timeLeft = breakTime;
+    isRunning = false;
+    updateDisplay();
+
+}
+function setLongbreak() {
+    timeLeft = longbreakTime;
+    updateDisplay();
+}
+
 updateDisplay();

@@ -5,12 +5,12 @@ A simple website designed to help users study effectively by giving them a peace
 The main aspect of this website is its chill and beautiful theme. This will help users to focus more on thier work.
 
 Along with the theme there are more productivity features such as - 
-- To-Do list
+- To-Do list 
 - Pomodoro Timer
 - Background Music
 
 ### Future Updates
-- [ ] Proper pomodoro timer
+- [x] Proper pomodoro timer
 - [ ] Add a sidebar  
 - [ ] Multiple themes  
 - [ ] More background music to choose from  
