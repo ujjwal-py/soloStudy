@@ -1,3 +1,5 @@
+// Logic for Todo List
+
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 let taskCounter = listContainer.getElementsByTagName("li").length;
@@ -44,7 +46,9 @@ function showData() {
 showData();
 
 
-// let timerHeding = document.getElementById("timerId");
+
+// Logic for Pomodoro Timer
+
 let timerDisplay = document.getElementById("timer");
 let startButton = document.querySelector(".pomoButtons button:nth-child(1)");
 let stopButton = document.querySelector(".pomoButtons button:nth-child(2)");
@@ -102,3 +106,58 @@ function setLongbreak() {
 }
 
 updateDisplay();
+
+// Logic for Theme and Music Change
+function changeTheme1() {
+    document.body.className = 'default-theme';
+    let todo = document.querySelector('.todolist');
+    let pomo = document.querySelector('.pomodoro');
+    let headingElements = document.querySelectorAll('h2');
+    headingElements.forEach(e => {
+        e.style.color = 'black';
+    });
+    let timerColor = document.getElementById('timer');
+    timerColor.style.color = 'black';
+    todo.style.backgroundImage = 'linear-gradient(to top, #6a85b6 0%, #bac8e0 100%)';
+    pomo.style.backgroundImage = 'linear-gradient(to top, #6a85b6 0%, #bac8e0 100%)';
+}
+function changeTheme2() {
+    document.body.className = 'dark-theme';
+    let todo = document.querySelector('.todolist');
+    let pomo = document.querySelector('.pomodoro');
+    let headingElements = document.querySelectorAll('h2');
+    headingElements.forEach(e => {
+        e.style.color = 'white';
+    });
+    let timerColor = document.getElementById('timer');
+    timerColor.style.color = 'white';
+    todo.style.backgroundImage = 'linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))';
+    pomo.style.backgroundImage = 'linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))';
+}
+
+function changeTheme3() {
+    document.body.className = 'ghibli-theme';
+    let todo = document.querySelector('.todolist');
+    let pomo = document.querySelector('.pomodoro');
+    todo.style.backgroundImage = 'linear-gradient(159deg, rgba(0,128,128,1) 0%, rgba(0,153,144,1) 100%)';
+    pomo.style.backgroundImage = 'linear-gradient(159deg, rgba(0,128,128,1) 0%, rgba(0,153,144,1) 100%)';
+    let headingElements = document.querySelectorAll('h2');
+    headingElements.forEach(e => {
+        e.style.color = 'black';
+    });
+    let timerColor = document.getElementById('timer');
+    timerColor.style.color = 'black';
+}
+function changeMusic1() {
+    let music = document.getElementById('music');
+    music.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=zAM1dqNBLOGRk26v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+}
+
+function changeMusic2() {
+    let music = document.getElementById('music');
+    music.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/sAcj8me7wGI?si=1cpSyNgEHkByTkoL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+}
+function changeMusic3() {
+    let music = document.getElementById('music');
+    music.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/DfSkKYQiwoU?si=ICMt7pqWneEfFoc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+}

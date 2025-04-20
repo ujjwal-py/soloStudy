@@ -11,6 +11,9 @@ Along with the theme there are more productivity features such as -
 
 ### Future Updates
 - [x] Proper pomodoro timer
-- [ ] Add a sidebar  
-- [ ] Multiple themes  
-- [ ] More background music to choose from  
+- [x] Add a sidebar  
+- [x] Multiple themes  
+- [x] More background music to choose from
+- [x] Make site responsive
+- [ ] Better UI
+- [ ] Pomodoro Usage Tracking

@@ -11,9 +11,14 @@
     <title>Solo Study</title>
     </head>
 <body>
-    <div class="main">
+    <div class="sidebar">
         <h1>Solo Study <img src="images\computer.png"></h1>
-        <p> This Website is Designed to help you give a soothing <b>Study</b> environment that motivates you and helps you track your progress.</p>
+        <button onclick="changeTheme1()">Theme 1</button>
+        <button  onclick="changeTheme2()">Theme 2</button>
+        <button  onclick="changeTheme3()">Theme 3</button>
+        <button onclick="changeMusic1()">Music 1</button>
+        <button onclick="changeMusic2()">Music 2</button>
+        <button onclick="changeMusic3()">Music 3</button>
     </div>
     <div class="tools">
         <div class="todolist">
@@ -46,9 +51,10 @@
     </div>
     <div class="bgmusic">
         <h2 id="bghead">Background Music</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HQwLPhE2zys?si=F82GCzzjboFy9eDr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
+        <div id="music">
+            <iframe id = "musicframe" width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=zAM1dqNBLOGRk26v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
