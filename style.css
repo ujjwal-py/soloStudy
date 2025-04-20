@@ -229,3 +229,25 @@ ul li span:hover {
 .setButtons:hover{
     background:blue;
 }
+footer {
+    font-size: 16px;
+    /* background-color: black; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+}
+footer {
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+.foot {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+footer a {
+    margin-left: 10px;
+    color: red;
+    text-decoration: none;
+}

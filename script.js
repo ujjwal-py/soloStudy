@@ -120,6 +120,9 @@ function changeTheme1() {
     timerColor.style.color = 'black';
     todo.style.backgroundImage = 'linear-gradient(to top, #6a85b6 0%, #bac8e0 100%)';
     pomo.style.backgroundImage = 'linear-gradient(to top, #6a85b6 0%, #bac8e0 100%)';
+
+    let tasksLists  = document.getElementById('list-container');
+    tasksLists.style.color = "black";
 }
 function changeTheme2() {
     document.body.className = 'dark-theme';
@@ -130,6 +133,10 @@ function changeTheme2() {
         e.style.color = 'white';
     });
     let timerColor = document.getElementById('timer');
+    let tasksLists  = document.getElementById('list-container');
+    tasksLists.style.color = "white";
+
+    
     timerColor.style.color = 'white';
     todo.style.backgroundImage = 'linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))';
     pomo.style.backgroundImage = 'linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0))';
@@ -147,6 +154,8 @@ function changeTheme3() {
     });
     let timerColor = document.getElementById('timer');
     timerColor.style.color = 'black';
+    let tasksLists  = document.getElementById('list-container');
+    tasksLists.style.color = "black";
 }
 function changeMusic1() {
     let music = document.getElementById('music');
