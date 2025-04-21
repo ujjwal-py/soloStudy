@@ -12,11 +12,17 @@ Along with the theme there are more productivity features such as -
 
 **Website is Live Now** - https://solostudy.netlify.app/
 
+## Updates
+### 1.1
+- Added Separete Section for Music
+- Added Separate Section to change themes and music
+
+
 ### Future Updates
 - [x] Proper pomodoro timer
 - [x] Add a sidebar  
 - [x] Multiple themes  
 - [x] More background music to choose from
-- [x] Make site responsive
-- [ ] Better UI
+- [ ] Make site mobile responsive
+- [ ] Add home and about pages
 - [ ] Pomodoro Usage Tracking
