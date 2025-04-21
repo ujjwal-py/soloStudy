@@ -24,24 +24,18 @@ body.ghibli-theme{
     width: 100%;
     height: 80px;
     border-radius:20px ;
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding: 20px; */
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
-@media (max-width: 768px) {
-    .sidebar {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-        gap: 10px; /* optional: spacing between items */
-    }
+/* @media (max-width: 768px) {
+    .body
     #musicframe {
-        width: 400px;
+        width: max-content;
     }
-}
+} */
 .sidebar button{
     outline: none;
     font-size: 20px;
@@ -70,6 +64,7 @@ body.ghibli-theme{
     justify-content: space-between;
     flex-wrap: wrap;
     opacity: 0.85;
+    margin-bottom: 30px;
 }
 
 .todolist{
@@ -80,13 +75,6 @@ body.ghibli-theme{
     border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 20px;
-}
-.todolist.default-theme {
-    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
-}
-.todolist.dark-theme {
-    background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
 }
 .todolist h2 {
     display: flex;
@@ -104,7 +92,6 @@ body.ghibli-theme{
     background:#c0c9da;
     border-radius: 30px;
     margin-bottom: 20px;
-
 }
 .pomodoro {
     background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
@@ -115,7 +102,6 @@ body.ghibli-theme{
     border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
-
 }
 .pomodoro h2 {
     display: flex;
@@ -129,13 +115,13 @@ body.ghibli-theme{
     font-size: 50px;
     text-align: center;
 }
-.bgmusic {
+/* .bgmusic {
     color:rgb(0, 0, 0);
     text-decoration:solid;
     width: 100%;
     text-align: center;
     font-size: 20px;
-}
+} */
 input {
     flex: 1;
     outline: none;
@@ -169,7 +155,6 @@ ul li::before {
     position:absolute;
     height: 28px;
     width: 28px;
-    /* border-radius: 50%; */
     background-image: url("images/square.png");
     background-size: cover;
     background-position: center;
@@ -197,7 +182,6 @@ ul li span {
 }
 ul li span:hover {
     background: #edeef0;
-
 }
 
 .pomoButtons {
@@ -210,7 +194,6 @@ ul li span:hover {
     border: none;
     outline: none;
     margin-top: 20px;
-    /* padding-right: 20px; */
 }
 .pomoButtons:hover{
     background: red;
@@ -229,13 +212,95 @@ ul li span:hover {
 .setButtons:hover{
     background:blue;
 }
+.lowerSection {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.85;
+    flex-wrap: wrap;
+    /* margin-top: 30px; */
+
+}
+.bgmusic{
+    width: 500px;
+    height: 410px;
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    text-align: center;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.bgmusic h2 {
+    display: flex;
+    justify-content: center;
+}
+.bgmusic h2 img{
+    width: 30px;
+    margin-left: 15px;
+}
+.settings {
+    width: 500px;
+    height: 410px;
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    text-align: center;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.settings h2 {
+    display: flex;
+    justify-content: center;
+}
+.settings h2 img {
+    width: 30px;
+    margin-left: 15px;
+}
+.themes {
+    display: flex;
+    justify-content: space-between;
+}
+.themes button{
+    font-size: 20px;
+    color: black;
+    font-family: Winky Rough;  
+    cursor: pointer;
+    background-image: linear-gradient(220.55deg, #FFED46 0%, #FF7EC7 100%);
+    border-radius: 20px;
+    text-decoration: none;
+    width: 90px;
+    border: none;
+}
+.themes button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+.music {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.music button{
+    font-size: 20px;
+    color: black;
+    font-family: Winky Rough;  
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(220.55deg, #FFED46 0%, #FF7EC7 100%);
+    border-radius: 20px;
+    width: 90px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.music button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
 footer {
     font-size: 16px;
-    /* background-color: black; */
     color: black;
     display: flex;
     justify-content: center;
-    /* padding: 20px; */
 }
 footer {
     margin-top: 20px;

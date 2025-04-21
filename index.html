@@ -13,12 +13,6 @@
 <body>
     <div class="sidebar">
         <h1>Solo Study <img src="images\laptop.png"></h1>
-        <button onclick="changeTheme1()">Theme 1</button>
-        <button  onclick="changeTheme2()">Theme 2</button>
-        <button  onclick="changeTheme3()">Theme 3</button>
-        <button onclick="changeMusic1()">Music 1</button>
-        <button onclick="changeMusic2()">Music 2</button>
-        <button onclick="changeMusic3()">Music 3</button>
     </div>
     <div class="tools">
         <div class="todolist">
@@ -49,18 +43,33 @@
             <!-- <div id="work-type">Work</div> -->
         </div>
     </div>
-    <div class="bgmusic">
-        <h2 id="bghead">Focus Music</h2>
-        <div id="music">
-            <iframe id = "musicframe" width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=zAM1dqNBLOGRk26v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="lowerSection">
+        <div class="bgmusic">
+            <h2>Now Playing <img src="images/headphones.png"></h2> 
+            <div id="player">
+                <iframe id = "musicframe" width="460" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=zAM1dqNBLOGRk26v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
-        
+        <div class="settings">
+            <h2>Settings <img src="images/setting.png"></h2>
+            <div class="themes">
+                <h3>Themes</h3>
+                <button  onclick="changeTheme1()">Theme 1</button>
+                <button  onclick="changeTheme2()">Theme 2</button>
+                <button  onclick="changeTheme3()">Theme 3</button>
+            </div>
+            <div class="music">
+                <h3>Music</h3>
+                <button onclick="changeMusic1()">Music 1</button>
+                <button onclick="changeMusic2()">Music 2</button>
+                <button onclick="changeMusic3()">Music 3</button>
+            </div>
+        </div>
     </div>
     <footer>
         <p class="foot">Made with ❤️ by Ujjwal</p>
         <a class ="foot" href="https://github.com/ujjwal-py" target="_blank">Github</a>
         <a class ="foot" href="https://www.linkedin.com/in/ujjwal-kumar-93ba18276/" target="_blank">Linkedin</a>
-
     </footer>
     <script src="script.js"></script>
 </body>
