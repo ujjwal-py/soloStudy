@@ -18,7 +18,7 @@ Along with the theme there are more productivity features such as -
 - Added Separate Section to change themes and music
 
 ### 1.2
-- Made mobile responsive (kinda)
+- Made mobile responsive 
 - Fixed UI
 - Cleaned js code
 
@@ -29,6 +29,7 @@ Along with the theme there are more productivity features such as -
 - [x] Multiple themes  
 - [x] More background music to choose from
 - [x] Make site mobile responsive
+- [ ] Fix the grid
 - [ ] Add home and about pages
 - [ ] Pomodoro Usage Tracking
 
