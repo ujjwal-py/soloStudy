@@ -17,12 +17,19 @@ Along with the theme there are more productivity features such as -
 - Added Separete Section for Music
 - Added Separate Section to change themes and music
 
+### 1.2
+- Made mobile responsive (kinda)
+- Fixed UI
+- Cleaned js code
+
 
 ### Future Updates
 - [x] Proper pomodoro timer
 - [x] Add a sidebar  
 - [x] Multiple themes  
 - [x] More background music to choose from
-- [ ] Make site mobile responsive
+- [x] Make site mobile responsive
 - [ ] Add home and about pages
 - [ ] Pomodoro Usage Tracking
+
+
